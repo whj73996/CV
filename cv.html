@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>汪豪杰的简历CV</title>
+  <!--  <script src="./icon/iconfont.js"></script>-->
+  <style type="text/css">
+    .icon {
+      width: 1em;
+      height: 1em;
+      vertical-align: -0.15em;
+      fill: currentColor;
+      overflow: hidden;
+    }
+  </style>
+
+  <style>
+    /*@import "reset.css";*/
+    .strong {
+      font-weight: initial;
+      color: #FF9900;
+    }
+
+    * {
+      /*text-decoration: none;*/
+      color: inherit;
+    }
+
+    body {
+      margin: 0;
+      font: 14px/1.5 Arial;
+      color: #9B9B9B;
+    }
+
+    .layout {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    #page {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    header {
+      height: 100px;
+      background-color: #fff;
+      color: #3c3c3c;
+      width: 100%;
+      padding: 60px 0 40px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 32px;
+    }
+
+    header p {
+      font-size: 12px;
+    }
+
+    aside {
+      width: 240px;
+      border-right: 1px solid #ccc;
+      background-color: #f9f9f9;
+    }
+
+    .avatar {
+      margin: 0 auto;
+      transform: translateY(-50%);
+      position: relative;
+      border-radius: 50%;
+      overflow: hidden;
+      width: 180px;
+      height: 180px;
+      box-shadow: 0 0 0 5px #ccc;
+      transition: all 0.4s;
+    }
+
+    .avatar:hover{
+      animation: float 0.6s alternate-reverse infinite;
+      border: 0;
+      box-shadow: 0 0 10px 4px #5c99ca;
+    }
+@keyframes float {
+  0%{
+
+    transform: scale(1)  translateY(-50%) ;
+  }
+  50%{
+    transform: scale(1.05)  translateY(-50%);
+  }
+  100%{
+    transform: scale(1)  translateY(-50%);
+  }
+
+}
+    .avatar > img {
+      position: absolute;
+      left: -90px;
+      top: -60px;
+      width: 360px;
+      height: auto;
+    }
+
+    section {
+      /*background-color: #b3d4fc;*/
+      margin: 30px 10px 0 20px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #ccc;
+    }
+
+    section > h2 {
+      color: #5c99ca;
+      font-size: 16px;
+    }
+
+    .personal .item span:first-child {
+      display: inline-block;
+      width: 80px;
+    }
+
+    .personal .item span:last-child {
+      color: #6F6F6F
+    }
+
+    .personal .item span:last-child::before {
+      content: ':';
+      margin-right: 10px;
+    }
+
+    .skills .item {
+      display: flex;
+      align-items: center;
+    }
+
+    .skills .keywords {
+      width: 80px;
+    }
+
+    .skills .rule {
+      flex: 1;
+      height: 4px;
+      border-radius: 2px;
+      background-color: #ccc;
+    }
+
+    .skills .rule i {
+      flex: 1;
+      display: block;
+      height: 4px;
+      width: 10%;
+      border-radius: 2px;
+      background-color: #3c3c3c
+    }
+
+    .contact .item span:first-child {
+      display: inline-block;
+      width: 70px;
+    }
+
+    .contact .item span:last-child {
+      color: #6F6F6F
+    }
+
+    .project h3,.school h3 {
+      font-size: 16px;
+      color: #3c3c3c;
+    }
+
+    main {
+      background-color: #f9f9f9;
+      flex: 1;
+      min-height: calc(100vh - 100px);
+    }
+
+    @media (max-width: 768px) {
+      header {
+        padding-bottom: 110px;
+      }
+
+      aside {
+        width: 100%;
+      }
+    }
+  </style>
+  <script src="icon/iconfont.js"></script>
+</head>
+<body>
+<div class="layout" id="page">
+  <header>
+    <h1>Haojie Wang</h1>
+    <p>应聘岗位: 前端工程师</p>
+  </header>
+  <aside>
+    <div class="avatar">
+      <img src="./avatar.jpg" alt="">
+    </div>
+    <section>
+      <h2>基础信息</h2>
+      <div class="detail personal">
+        <div class="item">
+          <span>姓名</span>
+          <span>汪豪杰</span>
+        </div>
+        <div class="item">
+          <span>学历</span>
+          <span>本科</span>
+        </div>
+        <div class="item">
+          <span>英语等级</span>
+          <span>六级</span>
+        </div>
+        <div class="item">
+          <span>工作经验</span>
+          <span>一年</span>
+        </div>
+        <div class="item">
+          <span>意向薪资</span>
+          <span>8~10k</span>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2>专业技能</h2>
+      <div class="detail skills">
+        <div class="item">
+          <span class="keywords">HTML5</span>
+          <span class="rule"><i style="width: 65%"></i></span>
+        </div>
+        <div class="item">
+          <span class="keywords">CSS3</span>
+          <span class="rule"><i style="width: 60%"></i></span>
+        </div>
+        <div class="item">
+          <span class="keywords">JavaScript</span>
+          <span class="rule"><i style="width: 75%"></i></span>
+        </div>
+        <div class="item">
+          <span class="keywords">Vue.js</span>
+          <span class="rule"><i style="width: 70%"></i></span>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2>联系方式</h2>
+      <div class="detail contact">
+        <div class="item">
+          <span>
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#iconicon-phone"></use>
+            </svg>
+          </span>
+          <span><a href="tel:19821289717">19821289717</a></span>
+        </div>
+        <div class="item">
+          <span>
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#iconmail"></use>
+            </svg>
+          </span>
+          <span><a href="mailto:739960552@qq.com">739960552@qq.com</a></span>
+        </div>
+        <div class="item">
+          <span>
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#iconwechat"></use>
+            </svg>
+          </span>
+          <span>whjhj123</span>
+        </div>
+        <div class="item">
+          <span>
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#iconlocation"></use>
+            </svg>
+          </span>
+          <span>九亭</span>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2>博客地址</h2>
+      <div class="detail contact">
+        <a href="https://juejin.im/user/3518029609314343">掘金-小吉良</a>
+      </div>
+    </section>
+  </aside>
+  <main>
+    <section>
+      <h2>关于我</h2>
+      <div class="detail introduction">
+        <div class="item">
+          <div>熟练使用HTML5、CSS3、了解SCSS、Sass、Less</div>
+          <div>熟练使用ES6写代码，对TS有基本了解</div>
+          <div>熟悉Vue技术栈，熟悉模块化、工程化开发流程，了解Webpack的配置</div>
+          <div>热爱技术，沟通表达能力良好，注重用户体验</div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2>教育经历</h2>
+      <div class="detail school">
+        <div class="item">
+          <h3>天津工业大学</h3>
+          双一流院校，专业排名前20%
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2>项目经历</h2>
+      <div class="detail project">
+        <h3>Vue技术栈实现《Aftertea》记账</h3>
+        <div class="item">
+          <ul>
+            <li>
+              项目介绍:
+              这是一款本地的记账类单页富应用，可以帮助用户对每天的支出，收入进行记录，并且可以对账单进行标签分类和备注。本人参与完成整个项目，技术栈用的是vue全家桶，
+              其中遇到比较记忆深刻的问题是数据存放，因为没有使用后端数据库，解决方法是将数据存储在浏览器本地的localstory中，缺点是这种方式储存的数据容量只能有5~10M,且当用户清理浏览器缓存，可能导致数据被抹除。
+            </li>
+            <li>技术栈: <span class="strong">Vue.js、TypeScript、Vue Cli、Vue Router、Vuex</span></li>
+            <li>项目源码：<a href="https://github.com/whj73996/After-tea-bill">github仓库地址</a></li>
+            <li>项目预览地址: <a href="https://whj73996.gitee.io/after-tea-bill-website" class="strong">《After-tea》</a>
+            </li>
+          </ul>
+        </div>
+        <h3>Vue技术栈实现《Notea》在线笔记（前后端分离）</h3>
+        <div class="item">
+          <ul>
+            <li>
+              项目介绍:
+              这是一款在线笔记，用户可以通过PC设备进行用户的注册登录，以及在线的笔记记录（支持Markdown语法），数据存储在后端数据库。本人参与完成整个项目，技术栈用的是vue全家桶和ES6的语法，
+              其中遇到比较令我印象深刻的是为了是项目为了提高对异步请求的操作的可复用性和可维护性，对Axios的请求用Promise进行了二次封装，对后端的Api接口也进行了组件化封装，使请求的操作在代码中实现比较简洁的效果。
+            </li>
+            <li>技术栈: <span class="strong">ES6、Vue.js、Vue Cli、Vue Router、Vuex</span></li>
+            <li>项目源码：<a href="https://github.com/whj73996/notea">github仓库地址</a></li>
+            <li>项目预览地址: <a href="https://whj73996.gitee.io/notea/#/login" class="strong">《Notea》在线笔记（注：请用火狐浏览器或者Chrome40版本以下的浏览器打开）</a>
+            </li>
+          </ul>
+        </div>
+        <h3>jQuery实现《Naviga》个人导航首页</h3>
+        <div class="item">
+          <ul>
+            <li>
+              项目介绍:
+              这是我做的一个人网站导航网站，用户在网站进行搜索，网站会自动跳转Baidu进行对应的关键词搜索。用的是jQuery，ES6的语法，
+              项目过程中，花时间比较多的就是对移动端的兼容，用了媒体查询@media；还有CSS3的animation过度动画效果，用的@keyframe关键帧和transform。
+            </li>
+            <li>技术栈: <span class="strong">jQuery、flex布局、css动画</span></li>
+            <li>项目源码：<a href="https://github.com/whj73996/naviga">github仓库地址</a></li>
+            <li>项目预览地址: <a href="https://whj73996.gitee.io/naviga/src/index.html" class="strong">《Naviga》个人导航首页</a>
+            </li>
+          </ul>
+        </div>
+        <h3>CSS绘制图案Demo</h3>
+        <div class="item">
+          <ul>
+            <li>
+              Demo介绍:
+              这是我用jQuery和CSS做的一个Demo，在网页上展示了我用CSS绘制图案的CSS代码过程，可以调整播放速度暂停。主要用到的就是JS的定时器API。
+              其中图案中的弧形和曲线较难绘制，需要对border-radius几个参数熟练运用。
+            </li>
+            <li>技术栈: <span class="strong">jQuery、flex布局、css动画</span></li>
+            <li>Demo源码：<a href="https://github.com/whj73996/pikaqiu">github仓库地址</a></li>
+            <li>预览地址: <a href="https://whj73996.gitee.io/pikaqiu/src/test.html" class="strong">CSS图案绘制</a>
+            </li>
+          </ul>
+        </div>
+        <h3>简易Canvas画板</h3>
+        <div class="item">
+          <ul>
+            <li>
+              Demo介绍:
+              这是我用jQuery和CSS做的一个Demo，在网页上展示了我用CSS绘制图案的CSS代码过程，可以调整播放速度暂停。主要用到的就是JS的定时器API。
+              其中图案中的弧形和曲线较难绘制，需要对border-radius几个参数熟练运用。
+            </li>
+            <li>技术栈: <span class="strong">Canvas,ES6</span></li>
+            <li>Demo源码：<a href="https://github.com/whj73996/canvas-">github仓库地址</a></li>
+            <li>预览地址: <a href="https://https://whj73996.gitee.io/canvas/canvas" class="strong">在线画板</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </section>
+  </main>
+</div>
+</body>
+</html>

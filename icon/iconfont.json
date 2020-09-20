@@ -1,0 +1,37 @@
+{
+  "id": "2079588",
+  "name": "notee",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "747222",
+      "name": "mail",
+      "font_class": "mail",
+      "unicode": "e61d",
+      "unicode_decimal": 58909
+    },
+    {
+      "icon_id": "809964",
+      "name": "phone",
+      "font_class": "icon-phone",
+      "unicode": "e657",
+      "unicode_decimal": 58967
+    },
+    {
+      "icon_id": "2207679",
+      "name": "icon-location",
+      "font_class": "location",
+      "unicode": "e640",
+      "unicode_decimal": 58944
+    },
+    {
+      "icon_id": "3876283",
+      "name": "wechat",
+      "font_class": "wechat",
+      "unicode": "e634",
+      "unicode_decimal": 58932
+    }
+  ]
+}
