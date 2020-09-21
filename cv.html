@@ -16,10 +16,25 @@
       overflow: hidden;
     }
   </style>
-
+  <style media="print">
+    .print {
+      margin-top: 60px;
+    }
+    .layout {
+      box-sizing: border-box;
+      max-width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
   <style>
     /*@import "reset.css";*/
     .strong {
+      font-weight: initial;
+      color: #FF9900;
+    }
+
+    strong {
       font-weight: initial;
       color: #FF9900;
     }
@@ -31,14 +46,16 @@
 
     body {
       margin: 0;
+      padding: 0;
       font: 14px/1.5 Arial;
       color: #9B9B9B;
     }
 
     .layout {
-      max-width: 900px;
+      max-width: 1000px;
       margin: 0 auto;
     }
+
 
     #page {
       display: flex;
@@ -50,7 +67,7 @@
       background-color: #fff;
       color: #3c3c3c;
       width: 100%;
-      padding: 60px 0 40px 0;
+      padding: 20px 0 40px 0;
       text-align: center;
     }
 
@@ -80,32 +97,34 @@
       transition: all 0.4s;
     }
 
-    .avatar:hover{
+
+    .avatar:hover {
       animation: float 0.6s alternate-reverse infinite;
       border: 0;
       box-shadow: 0 0 10px 4px #5c99ca;
     }
-@keyframes float {
-  0%{
 
-    transform: scale(1)  translateY(-50%) ;
-  }
-  50%{
-    transform: scale(1.05)  translateY(-50%);
-  }
-  100%{
-    transform: scale(1)  translateY(-50%);
-  }
+    @keyframes float {
+      0% {
 
-}
-    .avatar > img {
-      position: absolute;
-      left: -90px;
-      top: -60px;
-      width: 360px;
-      height: auto;
+        transform: scale(1) translateY(-50%);
+      }
+      50% {
+        transform: scale(1.05) translateY(-50%);
+      }
+      100% {
+        transform: scale(1) translateY(-50%);
+      }
+
     }
 
+    .avatar > img {
+      position: absolute;
+      left: -20px;
+      top: -20px;
+      width: 216px;
+      height: auto;
+    }
     section {
       /*background-color: #b3d4fc;*/
       margin: 30px 10px 0 20px;
@@ -166,7 +185,7 @@
       color: #6F6F6F
     }
 
-    .project h3,.school h3 {
+    .project h3, .school h3 {
       font-size: 16px;
       color: #3c3c3c;
     }
@@ -177,13 +196,37 @@
       min-height: calc(100vh - 100px);
     }
 
-    @media (max-width: 768px) {
-      header {
-        padding-bottom: 110px;
-      }
 
+    @media (max-width: 768px) {
       aside {
         width: 100%;
+      }
+      header {
+        height: 50px;
+        padding:15px 0 42px 0;
+      }
+      header h1{
+        font-size: 18px;
+      }
+      .avatar {
+        margin: -50px auto auto 25px;
+        width: 72px;
+        height:  72px;
+        box-shadow:  0 0 0 3px #ccc ;
+      }
+      .avatar > img {
+        position: absolute;
+        left: -18px;
+        top: -16px;
+        width: 108px;
+        height: auto;
+      }
+      section{
+        padding-bottom: 16px;
+        margin-top: 10px;
+      }
+      h2{
+        margin: 5px 0!important;
       }
     }
   </style>
@@ -208,7 +251,7 @@
         </div>
         <div class="item">
           <span>学历</span>
-          <span>本科</span>
+          <span>全日制本科</span>
         </div>
         <div class="item">
           <span>英语等级</span>
@@ -218,33 +261,33 @@
           <span>工作经验</span>
           <span>一年</span>
         </div>
-        <div class="item">
-          <span>意向薪资</span>
-          <span>8~10k</span>
-        </div>
+        <!--        <div class="item">-->
+        <!--          <span>意向薪资</span>-->
+        <!--          <span>8~10k</span>-->
+        <!--        </div>-->
       </div>
     </section>
-    <section>
-      <h2>专业技能</h2>
-      <div class="detail skills">
-        <div class="item">
-          <span class="keywords">HTML5</span>
-          <span class="rule"><i style="width: 65%"></i></span>
-        </div>
-        <div class="item">
-          <span class="keywords">CSS3</span>
-          <span class="rule"><i style="width: 60%"></i></span>
-        </div>
-        <div class="item">
-          <span class="keywords">JavaScript</span>
-          <span class="rule"><i style="width: 75%"></i></span>
-        </div>
-        <div class="item">
-          <span class="keywords">Vue.js</span>
-          <span class="rule"><i style="width: 70%"></i></span>
-        </div>
-      </div>
-    </section>
+    <!--    <section>-->
+    <!--      <h2>专业技能</h2>-->
+    <!--      <div class="detail skills">-->
+    <!--        <div class="item">-->
+    <!--          <span class="keywords">HTML5</span>-->
+    <!--          <span class="rule"><i style="width: 65%"></i></span>-->
+    <!--        </div>-->
+    <!--        <div class="item">-->
+    <!--          <span class="keywords">CSS3</span>-->
+    <!--          <span class="rule"><i style="width: 60%"></i></span>-->
+    <!--        </div>-->
+    <!--        <div class="item">-->
+    <!--          <span class="keywords">JavaScript</span>-->
+    <!--          <span class="rule"><i style="width: 75%"></i></span>-->
+    <!--        </div>-->
+    <!--        <div class="item">-->
+    <!--          <span class="keywords">Vue.js</span>-->
+    <!--          <span class="rule"><i style="width: 70%"></i></span>-->
+    <!--        </div>-->
+    <!--      </div>-->
+    <!--    </section>-->
     <section>
       <h2>联系方式</h2>
       <div class="detail contact">
@@ -278,15 +321,20 @@
               <use xlink:href="#iconlocation"></use>
             </svg>
           </span>
-          <span>九亭</span>
+          <span>松江-九亭</span>
         </div>
       </div>
     </section>
     <section>
       <h2>博客地址</h2>
       <div class="detail contact">
-        <a href="https://juejin.im/user/3518029609314343">掘金-小吉良</a>
+
+        <strong><a href="https://juejin.im/user/3518029609314343">我的掘金</a></strong><br/>
+        目前有18篇技术博客<br/>
+        <strong><a href="https://juejin.im/user/3518029609314343">我的GitHub</a></strong><br/>
+        过去三个月有160次提交
       </div>
+
     </section>
   </aside>
   <main>
@@ -294,9 +342,11 @@
       <h2>关于我</h2>
       <div class="detail introduction">
         <div class="item">
-          <div>熟练使用HTML5、CSS3、了解SCSS、Sass、Less</div>
-          <div>熟练使用ES6写代码，对TS有基本了解</div>
-          <div>熟悉Vue技术栈，熟悉模块化、工程化开发流程，了解Webpack的配置</div>
+          <div>熟练使用<strong> HTML5</strong>、<strong>CSS3</strong>、<strong>
+            Flex</strong>布局，了解<strong>SCSS、Sass、Less</strong></div>
+          <div>熟练使用<strong> ES6 </strong>写代码，了解<strong> TypeScript </strong></div>
+          <div>熟悉<strong> Vue全家桶 </strong>，熟悉模块化、工程化开发流程，了解<strong> Webpack </strong>的配置</div>
+          <div>熟练使用<strong> Git </strong>进行代码版本管理</div>
           <div>热爱技术，沟通表达能力良好，注重用户体验</div>
         </div>
       </div>
@@ -306,6 +356,7 @@
       <div class="detail school">
         <div class="item">
           <h3>天津工业大学</h3>
+          <h4>全日制本科（2015~2019）</h4>
           双一流院校，专业排名前20%
         </div>
       </div>
@@ -313,27 +364,30 @@
     <section>
       <h2>项目经历</h2>
       <div class="detail project">
-        <h3>Vue技术栈实现《Aftertea》记账</h3>
         <div class="item">
+          <h3>Vue技术栈《Aftertea》记账</h3>
           <ul>
             <li>
-              项目介绍:
-              这是一款本地的记账类单页富应用，可以帮助用户对每天的支出，收入进行记录，并且可以对账单进行标签分类和备注。本人参与完成整个项目，技术栈用的是vue全家桶，
+              一款基于<strong> Vue </strong>/<strong> TypeScript </strong>的<strong> 移动端</strong>记账单页面应用。<br/>
+              我从自己的需求出发，帮助用户对每天的支出，收入进行记录，并且可以对账单进行标签分类和备注。特点是简洁快速，用户可以通过记录了解自己的消费习惯。
               其中遇到比较记忆深刻的问题是数据存放，因为没有使用后端数据库，解决方法是将数据存储在浏览器本地的localstory中，缺点是这种方式储存的数据容量只能有5~10M,且当用户清理浏览器缓存，可能导致数据被抹除。
             </li>
-            <li>技术栈: <span class="strong">Vue.js、TypeScript、Vue Cli、Vue Router、Vuex</span></li>
+            <li>技术栈: <strong>Vue全家桶</strong>，<strong>TypeScript</strong>，用到了<strong>装饰器语法</strong>，<br/>
+              结合了<strong>表驱动编程</strong>、<strong>模块化思想</strong>、<strong>重构技巧</strong>对代码进行多次重构和简化。
+            </li>
+
             <li>项目源码：<a href="https://github.com/whj73996/After-tea-bill">github仓库地址</a></li>
             <li>项目预览地址: <a href="https://whj73996.gitee.io/after-tea-bill-website" class="strong">《After-tea》</a>
             </li>
           </ul>
         </div>
-        <h3>Vue技术栈实现《Notea》在线笔记（前后端分离）</h3>
         <div class="item">
+          <h3>Vue技术栈《Notea》在线笔记</h3>
           <ul>
             <li>
-              项目介绍:
-              这是一款在线笔记，用户可以通过PC设备进行用户的注册登录，以及在线的笔记记录（支持Markdown语法），数据存储在后端数据库。本人参与完成整个项目，技术栈用的是vue全家桶和ES6的语法，
-              其中遇到比较令我印象深刻的是为了是项目为了提高对异步请求的操作的可复用性和可维护性，对Axios的请求用Promise进行了二次封装，对后端的Api接口也进行了组件化封装，使请求的操作在代码中实现比较简洁的效果。
+              一个基于<strong> Vue </strong>/<strong> ES6 </strong>的<strong> PC端</strong>在线笔记应用。<br/>
+              用户可以通过PC设备进行用户的注册登录，以及在线的笔记记录（支持Markdown语法），数据存储在后端数据库，项目<strong> 前后端分离 </strong>。
+              其中遇到比较令我印象深刻的是为了是项目为了提高对异步请求的操作的可复用性和可维护性，对Axios的请求用Promise进行了二次封装，对后端的Api接口也进行了模块化化封装，使请求的操作在代码中实现比较简洁的效果。
             </li>
             <li>技术栈: <span class="strong">ES6、Vue.js、Vue Cli、Vue Router、Vuex</span></li>
             <li>项目源码：<a href="https://github.com/whj73996/notea">github仓库地址</a></li>
@@ -341,13 +395,13 @@
             </li>
           </ul>
         </div>
-        <h3>jQuery实现《Naviga》个人导航首页</h3>
         <div class="item">
+          <h3>jQuery实现《Naviga》个人导航首页</h3>
           <ul>
             <li>
-              项目介绍:
+              一个基于<strong> jQuery </strong>/<strong>  </strong>的<strong> PC端(兼容移动端) </strong>首页导航网站。<br/>
               这是我做的一个人网站导航网站，用户在网站进行搜索，网站会自动跳转Baidu进行对应的关键词搜索。用的是jQuery，ES6的语法，
-              项目过程中，花时间比较多的就是对移动端的兼容，用了媒体查询@media；还有CSS3的animation过度动画效果，用的@keyframe关键帧和transform。
+              项目过程中，花时间比较多的是对移动端的兼容，用了媒体查询@media；还有CSS3的animation过度动画效果，用的@keyframe关键帧和transform。
             </li>
             <li>技术栈: <span class="strong">jQuery、flex布局、css动画</span></li>
             <li>项目源码：<a href="https://github.com/whj73996/naviga">github仓库地址</a></li>
@@ -355,22 +409,22 @@
             </li>
           </ul>
         </div>
-        <h3>CSS绘制图案Demo</h3>
         <div class="item">
+          <h3>CSS绘制图案Demo</h3>
           <ul>
             <li>
               Demo介绍:
               这是我用jQuery和CSS做的一个Demo，在网页上展示了我用CSS绘制图案的CSS代码过程，可以调整播放速度暂停。主要用到的就是JS的定时器API。
               其中图案中的弧形和曲线较难绘制，需要对border-radius几个参数熟练运用。
             </li>
-            <li>技术栈: <span class="strong">jQuery、flex布局、css动画</span></li>
+            <li>技术栈: <span class="strong">jQuery、flex布局、CSS动画</span></li>
             <li>Demo源码：<a href="https://github.com/whj73996/pikaqiu">github仓库地址</a></li>
             <li>预览地址: <a href="https://whj73996.gitee.io/pikaqiu/src/test.html" class="strong">CSS图案绘制</a>
             </li>
           </ul>
         </div>
-        <h3>简易Canvas画板</h3>
-        <div class="item">
+        <div class="item print">
+          <h3>简易Canvas画板</h3>
           <ul>
             <li>
               Demo介绍:
